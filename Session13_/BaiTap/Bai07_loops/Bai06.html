@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="../Bai07_loops/Bai06.js"></script>
+    <script>
+        //In ra giai thừa của số nguyên dương N? N nhập từ browser
+        // let n = +prompt('Mời bạn nhập n');
+
+        // if (n < 0) {
+        //     console.log("Không phải số nguyên dương mời bạn nhập lại:");
+        // } else {
+        //     let giaithua = 1;
+        //     for (let i = 1; i <= n; i++) {
+        //         giaithua *= i;
+        //     }
+        //     console.log(`Giai thừa của ${n} là ${giaithua}`);
+        // }
+        //In ra dãy 20 số Fibonaci đầu tiên
+        // let Fibonaci = +prompt('Mời bạn nhập Fibonaci:');
+        // let a = 1;
+        // let b = 1;
+        // for (let i = 1; i <= Fibonaci; i++) {
+        //     console.log(a);
+        //     let c = a + b;
+        //     a = b;
+        //     b = c;
+        // }
+        // //In ra một tam giác vuông
+        let Delta = +prompt('Mời bạn nhập số');
+        // for (let i = Delta; i >= 1; i--) {
+        //     let row = '';
+        //     for (let j = 1; j <= i; j++) {
+        //         row += '*';
+        //     }
+        //     console.log(row);
+        // }
+        // for (let i = 1; i <= Delta; i++) {
+        //     let row = '';
+        //     for (let j = 1; j <= i; j++) {
+        //         row += '*';
+        //     }
+        //     console.log(row);
+        // }
+
+        for (let i = 1; i <= Delta; i++) {
+            let row = '';
+            for (let k = Delta - i; k >= 1; k--) {
+                row += ' ';
+            }
+            for (let j = 1; j <= i; j++) {
+                row += '*';
+            }
+            console.log(row);
+        }
+        // for (let i = Delta; i >= 1; i--) {
+        //     let row = '';
+        //     for (let k = Delta - i; k > 0; k--) {
+        //         row += ' ';
+        //     }
+        //     for (let j = i; j >= 1; j--) {
+        //         row += '*';
+        //     }
+        //     console.log(row);
+        // }
+        //Game đoán số:
+        //Mô tả ứng dụng: Khi người dùng nhấn vào button “OK”:
+        //Ứng dụng lấy kết quả và so sánh với giá trị ngẫu nhiên từ 1 - 10.
+
+        // Nếu bằng thì hiển thị thông báo chúc mừng và kết thúc lượt chơi
+
+        // Nếu lớn hơn hoặc bé thì hiển thị thông báo lớn hơn hay bé và cho phép người chơi đoán tiếp
+
+        // Nếu 3 lượt đoán mà chưa đoán được thì thông báo người chơi đã thua
+
+        // Game có thể áp dụng bằng prompt().
+        // let randomNumber = Math.floor(Math.random() * 10) + 1;
+        // console.log(randomNumber);
+        // let count = 0;
+        // while (count < 3) {
+        //     let number = +prompt('Mời bạn nhập số');
+        //     if (number === randomNumber) {
+        //         console.log('Chúc mừng bạn đã đoán đúng');
+        //         break;
+        //     } else if (number > randomNumber) {
+        //         console.log('Bạn đã đoán quá lớn');
+        //     } else {
+        //         console.log('Bạn đã đoán quá nhỏ');
+        //     }
+        //     count++;
+        // }
+        // if (count === 3) {
+        //     console.log('Bạn đã thua');
+        // }
+
+        //Viết một ứng dụng hỏi người dùng mày có yêu tao không
+        //lặp đi lặp lại quá trình khi người dùng trả lời "yes"
+        //lặp đi lặp lại quá trình khi người dùng trả lời "no"
+
+    </script>
+</body>
+
+</html>
